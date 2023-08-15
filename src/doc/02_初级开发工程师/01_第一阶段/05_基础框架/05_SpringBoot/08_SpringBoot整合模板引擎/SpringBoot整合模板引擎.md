@@ -2,7 +2,7 @@
 title: SpringBoot整合模板引擎
 icon: file
 order: 1
-author: 十七
+author: FrostyLunar
 date: 2023-07-10 周一
 category:
 	- 初级开发工程师

@@ -2,7 +2,7 @@
 title: SpringJPA知识点
 icon: file
 order: 1
-author: 十七
+author: FrostyLunar
 date: 2023-08-03 周四
 category:
 	- 初级开发工程师

@@ -2,7 +2,7 @@
 title: SpringBoot对Bean的管理
 icon: file
 order: 1
-author: 十七
+author: FrostyLunar
 date: 2023-07-19 周三
 category:
 	- 初级开发工程师

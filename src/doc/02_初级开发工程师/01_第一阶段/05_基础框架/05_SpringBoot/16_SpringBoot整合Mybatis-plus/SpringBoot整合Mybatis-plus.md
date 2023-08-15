@@ -2,7 +2,7 @@
 title: SpringBoot整合Mybatis-plus
 icon: file
 order: 1
-author: 十七
+author: FrostyLunar
 date: 2023-07-31 周一
 category:
 	- 初级开发工程师

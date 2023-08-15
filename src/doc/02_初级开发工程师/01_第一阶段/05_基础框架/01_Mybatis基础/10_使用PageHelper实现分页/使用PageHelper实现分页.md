@@ -2,7 +2,7 @@
 title: 使用PageHelper实现分页
 icon: file
 order: 1
-author: 十七
+author: FrostyLunar
 date: 2023-07-06 周四
 category:
 	- 初级开发工程师

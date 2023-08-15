@@ -2,7 +2,7 @@
 title: JDBC
 icon: file
 order: 1
-author: 十七
+author: FrostyLunar
 date: 2023-06-15 周四
 category:
 	- 初级开发工程师

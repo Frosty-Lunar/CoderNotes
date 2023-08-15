@@ -2,7 +2,7 @@
 title: 六大设计原则 (SOLID)
 icon: file
 order: 1
-author: 十七
+author: FrostyLunar
 date: 2023-08-10 周四
 category:
 	- 初级开发工程师

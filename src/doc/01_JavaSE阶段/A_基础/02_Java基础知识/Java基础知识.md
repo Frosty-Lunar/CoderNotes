@@ -1,7 +1,7 @@
 ---
 title: Java基础知识
 icon: file
-author: 十七
+author: FrostyLunar
 date: 2023-06-15 周四
 category:
 	- JavaSE阶段

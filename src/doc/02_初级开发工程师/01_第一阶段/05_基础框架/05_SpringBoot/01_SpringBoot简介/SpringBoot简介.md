@@ -2,7 +2,7 @@
 title: SpringBoot简介
 icon: file
 order: 1
-author: 十七
+author: FrostyLunar
 date: 2023-07-03 周一
 category:
 	- 初级开发工程师

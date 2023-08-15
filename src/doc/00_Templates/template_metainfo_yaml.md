@@ -2,7 +2,7 @@
 title: {{title}}
 icon: file
 order: 1
-author: 十七
+author: FrostyLunar
 date: {{date:YYYY-MM-DD ddd}}
 category:
 	- 初级开发工程师
