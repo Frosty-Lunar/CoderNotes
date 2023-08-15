@@ -1,20 +1,21 @@
 {
   "main": {
-    "id": "3c34c8e2d81fd0a1",
+    "id": "8f43c75130310a9d",
     "type": "split",
     "children": [
       {
-        "id": "686b3402840db77f",
+        "id": "c8fe41828a0febf4",
         "type": "tabs",
         "children": [
           {
-            "id": "4af5d73dd61dd889",
+            "id": "14d1031abd2a9c6e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Test.md",
+                "file": "02_初级开发工程师/01_第一阶段/第一阶段.md",
                 "mode": "source",
+                "backlinks": true,
                 "source": false
               }
             }
@@ -25,15 +26,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "6223a5fea994cec6",
+    "id": "10993107ef0da593",
     "type": "split",
     "children": [
       {
-        "id": "bed4f4b3f3d9025e",
+        "id": "b8a01bb8e165a6ec",
         "type": "tabs",
         "children": [
           {
-            "id": "76b6d95b8efa97b2",
+            "id": "7327be173ddc19a1",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -43,22 +44,38 @@
             }
           },
           {
-            "id": "f3b9f3c19e87b141",
+            "id": "7ea1498be3520052",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "lombok",
                 "matchingCase": false,
-                "explainSearch": false,
+                "explainSearch": true,
                 "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical"
+                "extraContext": true,
+                "sortOrder": "alphabeticalReverse"
               }
             }
           },
           {
-            "id": "15820e2c2245ac50",
+            "id": "8932981c3da76794",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "f30091890c464a7c",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {}
+            }
+          },
+          {
+            "id": "ed3f510e51748cbc",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -69,47 +86,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 254.5
   },
   "right": {
-    "id": "cb737652cc91fda3",
+    "id": "0e00c07c15aacc6a",
     "type": "split",
     "children": [
       {
-        "id": "0a25280f3a5dcbe7",
+        "id": "ac85824396a0fa4b",
         "type": "tabs",
+        "dimension": 78.78486055776892,
         "children": [
           {
-            "id": "864b7d37a2e80ed7",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "Test.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "9e12b533cf999657",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "Test.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "713d516f37c9da10",
+            "id": "b147b98f6d6b545f",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -120,12 +109,92 @@
             }
           },
           {
-            "id": "fd2d30216f5b3a6a",
+            "id": "1344024e139a925f",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Test.md"
+                "file": "02_初级开发工程师/01_第一阶段/第一阶段.md"
+              }
+            }
+          },
+          {
+            "id": "a02a24ecec1612aa",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "544fa6fe29f70a19",
+        "type": "tabs",
+        "dimension": 21.215139442231074,
+        "children": [
+          {
+            "id": "8f9494716f70ab8e",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "02_初级开发工程师/01_第一阶段/第一阶段.md",
+                "options": {
+                  "collapse-filter": false,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": false,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": true,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 1,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 86,
+                  "scale": 0.7514342322277593,
+                  "close": true
+                }
+              }
+            }
+          },
+          {
+            "id": "d1e92e67be590168",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "02_初级开发工程师/01_第一阶段/第一阶段.md",
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "bfbf0bc93b5fa91b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "02_初级开发工程师/01_第一阶段/第一阶段.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
               }
             }
           }
@@ -133,8 +202,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 569.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -143,11 +211,64 @@
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": false
+      "command-palette:打开命令面板": false,
+      "workspaces:管理工作区布局": false,
+      "markdown-importer:打开 Markdown 格式转换器": false,
+      "audio-recorder:开始/结束录音": false,
+      "random-note:开始漫游笔记": false,
+      "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false,
+      "markdown-table-editor:Open Markdown Table Editor": false,
+      "obsidian-memos:Memos": false
     }
   },
-  "active": "4af5d73dd61dd889",
+  "active": "14d1031abd2a9c6e",
   "lastOpenFiles": [
-    "Test.md.md"
+    "02_初级开发工程师/01_第一阶段/01_阿里代码规范/阿里代码规范.md",
+    "02_初级开发工程师/01_第一阶段/01_阿里代码规范/assets/阿里规约.pdf",
+    "02_初级开发工程师/初级开发工程师.md",
+    "01_JavaSE阶段/JavaSE阶段.md",
+    "01_JavaSE阶段/A_基础/02_Java基础知识/Java基础知识.md",
+    "01_JavaSE阶段/A_基础/03_Java基础语法/Java基础语法上.md",
+    "01_JavaSE阶段/A_基础/JavaSE基础.md",
+    "01_JavaSE阶段/A_基础/01_Java概念/Java概念.md",
+    "00_Templates/template_metainfo_yaml.md",
+    "01JavaSE/JQuery.md",
+    "学习路线.md",
+    "12_其他语言/其他语言.md",
+    "12_其他语言",
+    "11_AI方向/AI方向.md",
+    "11_AI方向",
+    "10_大数据进阶/大数据进阶.md",
+    "10_大数据进阶",
+    "09_手撕算法/手撕算法.md",
+    "09_手撕算法",
+    "08_故障分析/故障分析.md",
+    "08_故障分析",
+    "07_项目实践/项目实践.md",
+    "07_项目实践",
+    "06_提高阶段/提高阶段.md",
+    "06_提高阶段",
+    "05_高级开发工程师/高级开发工程师.md",
+    "05_高级开发工程师",
+    "04_中级开发工程师/中级开发工程师.md",
+    "04_中级开发工程师",
+    "03_计算机基础知识/计算机基础知识.md",
+    "02_初级开发工程师/01_第一阶段/05_基础框架/06_SpringJPA/03_SpringJPA知识点/05_JpaRepository接口/assets/image-20230805170227667.png",
+    "02_初级开发工程师/01_第一阶段/05_基础框架/06_SpringJPA/03_SpringJPA知识点/04_PagingAndSortingRepository接口/assets/image-20230804171912246.png",
+    "02_初级开发工程师/01_第一阶段/05_基础框架/06_SpringJPA/03_SpringJPA知识点/04_PagingAndSortingRepository接口/assets/image-20230804171815045.png",
+    "02_初级开发工程师/01_第一阶段/05_基础框架/06_SpringJPA/03_SpringJPA知识点/04_PagingAndSortingRepository接口/assets/image-20230804141546241.png",
+    "02_初级开发工程师/01_第一阶段/05_基础框架/06_SpringJPA/03_SpringJPA知识点/03_CrudRepository接口/assets/image-20230803111732559.png",
+    "02_初级开发工程师/01_第一阶段/05_基础框架/06_SpringJPA/03_SpringJPA知识点/02_Repository接口/assets/image-20230803101858591.png",
+    "02_初级开发工程师/01_第一阶段/05_基础框架/06_SpringJPA/03_SpringJPA知识点/02_Repository接口/assets/image-20230803101439924.png",
+    "02_初级开发工程师/01_第一阶段/05_基础框架/06_SpringJPA/03_SpringJPA知识点/02_Repository接口/assets/image-20230803101258535.png",
+    "02_初级开发工程师/01_第一阶段/05_基础框架/06_SpringJPA/03_SpringJPA知识点/01_入门案例/assets/image-20230803101141386.png",
+    "02_初级开发工程师/01_第一阶段/05_基础框架/06_SpringJPA/03_SpringJPA知识点/01_入门案例/assets/image-20230803100737404.png",
+    "02_初级开发工程师/01_第一阶段/05_基础框架/06_SpringJPA/03_SpringJPA知识点/06_JpaSpecificationExecutor接口/JpaSpecificationExecutor接口.md",
+    "02_初级开发工程师/01_第一阶段/05_基础框架/06_SpringJPA/03_SpringJPA知识点/05_JpaRepository接口/JpaRepository接口.md",
+    "02_初级开发工程师/01_第一阶段/05_基础框架/06_SpringJPA/03_SpringJPA知识点/04_PagingAndSortingRepository接口/PagingAndSortingRepository接口.md",
+    "02_初级开发工程师/01_第一阶段/05_基础框架/06_SpringJPA/03_SpringJPA知识点/03_CrudRepository接口/CrudRepository接口.md",
+    "02_初级开发工程师/01_第一阶段/05_基础框架/06_SpringJPA/03_SpringJPA知识点/02_Repository接口/Repository接口.md",
+    "02_初级开发工程师/01_第一阶段/05_基础框架/06_SpringJPA/03_SpringJPA知识点/01_入门案例/入门案例.md",
+    "未命名.canvas"
   ]
 }

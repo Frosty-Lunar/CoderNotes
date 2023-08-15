@@ -1,1 +1,24 @@
-{}
+{
+  "spellcheck": false,
+  "spellcheckLanguages": null,
+  "attachmentFolderPath": "./assets",
+  "showLineNumber": true,
+  "trashOption": "local",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "00_InBox",
+  "strictLineBreaks": false,
+  "alwaysUpdateLinks": true,
+  "promptDelete": false,
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "Tabloid",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  },
+  "readableLineLength": false,
+  "useMarkdownLinks": true,
+  "newLinkFormat": "relative",
+  "showUnsupportedFiles": true,
+  "vimMode": false
+}

@@ -4,11 +4,11 @@ import sidebar from "./sidebar.js";
 
 export default hopeTheme({
     //当前网站部署到的域名
-    hostname: "https://me-turing.github.io/CoderNotes/",
+    hostname: "https://frosty-lunar.github.io/CoderNotes/",
 
     //文章显示的默认作者
     author: {
-        name: "十七",
+        name: "FrostyLunar",
         url: "/",
     },
 
