@@ -3,7 +3,7 @@ title: JavaEE简介
 icon: file
 order: 1
 author: FrostyLunar
-date: 2023-06-15 周四
+date: 2023-08-16 周三
 category:
 	- 初级开发工程师
 tag:
@@ -16,11 +16,11 @@ index: true
 
 ## 什么是JavaEE
 
-`JavaEE（Java Enterprise Edition）`，Java企业版，是一个用于企业级web开发平台。最早由Sun公司定制并发布，后由Oracle负责维护。JavaEE平台规范了在开发企业级web应用中的技术标准.
+`JavaEE（Java Enterprise Edition）`，Java企业版，是一个用于企业级web开发平台。最早由Sun公司定制并发布，后由Oracle负责维护。JavaEE平台规范了在开发企业级web应用中的技术标准。
 
 ![](./image/image_XjW7yeh9L8.png)
 
-在JavaEE平台共包含了13个技术规范（随着JavaEE版本的变化所包含的技术点的数量会有增多）。它们分别是：JDBC、JNDI、EJB、RMI、Servlet、JSP、XML、JMS、Java IDL、JPA、JTA、JavaMail和JAF。&#x20;
+在JavaEE平台共包含了13个技术规范（随着JavaEE版本的变化所包含的技术点的数量会有增多）。它们分别是：`JDBC`、`JNDI`、`EJB`、`RMI`、`Servlet`、`JSP`、`XML`、`JMS`、`Java IDL`、`JPA`、`JTA`、`JavaMail`和`JAF`。
 
 ## JavaEE的技术分布
 
@@ -32,7 +32,7 @@ index: true
 
 ## JavaEE应用服务器（JavaEE Application Server）
 
-应用服务器是Java EE规范的具体实现, 可以执行/驱动基于JavaEE平台开发的web项目。绝大部分的应用服务器都是付费产品。
+应用服务器是Java EE规范的具体实现, 可以执行/驱动基于JavaEE平台开发的web项目，绝大部分的应用服务器都是付费产品。
 
 常见的应用服务：
 - Weblogic（BEA Oracle 收费）

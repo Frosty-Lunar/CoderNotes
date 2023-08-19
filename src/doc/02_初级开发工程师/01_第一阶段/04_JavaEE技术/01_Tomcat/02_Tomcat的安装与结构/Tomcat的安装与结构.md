@@ -3,7 +3,7 @@ title: Tomcat的安装与结构
 icon: file
 order: 1
 author: FrostyLunar
-date: 2023-06-15 周四
+date: 2023-08-16 周三
 category:
 	- 初级开发工程师
 tag:
@@ -16,15 +16,15 @@ index: true
 
 ### 下载
 
-官方网址: [http://tomcat.apache.org/](http://tomcat.apache.org/ "http://tomcat.apache.org/")
+[官方网址](http://tomcat.apache.org/ )
 
 ![](./image/image_7o9k8dh8Mo.png)
 
 ### 安装
 
-tomcat由apache开源组织使用java开发的一款web容器,**在使用之前需要安装JDK及配置JAVA\_HOME**.
+tomcat是由apache开源组织使用Java开发的一款web容器，**在使用之前需要安装JDK及配置JAVA\_HOME**。
 
-Tomcat是绿色软解，解压就可使用。如果之前已经安装了其他tomcat并且还配置了`CATALINA_HOME `不要忘记修改`CATALINA_HOME`指向我们现在使用的这个tomcat
+Tomcat是绿色软件，解压就可使用。如果之前已经安装了其他tomcat并且还配置了`CATALINA_HOME `不要忘记修改`CATALINA_HOME`指向我们现在使用的这个tomcat。
 
 ### 启动
 
@@ -38,8 +38,8 @@ Tomcat是绿色软解，解压就可使用。如果之前已经安装了其他to
 
 ### 访问
 
-访问Tomcat的URL格式：[http://ip](http://ip "http://ip"):port
-访问本机Tomcat的URL格式：[http://localhost:8080](http://localhost:8080 "http://localhost:8080")
+访问Tomcat的URL格式：`http://ip:port`
+访问本机Tomcat的URL格式：`http://localhost:8080`
 
 ## Tomcat目录结构
 

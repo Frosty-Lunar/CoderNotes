@@ -38,7 +38,7 @@ public class test01 {
         // abc =》  accdef    返回 b与c之间的ASCII差值 -1
         // abc =》  abcdef    返回 两者之间的长度差 -3
         // abc =》  abc       返回 0
-        // abc =》  abf       返回 b与c之间的ASCII差值 -3
+        // abc =》  abf       返回 f与c之间的ASCII差值 -3
         s2 = "abc";
         s3 = "abf";
         System.out.println(s2.compareTo(s3));
@@ -83,7 +83,7 @@ public class test01 {
 
 ![](./image/image_FE60GWBhNW.png)
 
-构造方法赋值：**`String a = new String("123");`**
+构造方法赋值：**String a = new String("123");**
 
 ![](./image/image_slEwksELmR.png)
 

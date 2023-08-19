@@ -39,14 +39,20 @@ index: true
 
 ### 创建工程
 
-1.  选择Java Enterprise&#x20;
+1.  选择Java Enterprise;
     ![](./image/image_-g28S2vg9u.png)
     1.  Project SDK选项  推荐 1.8  如果没有SDK 可以通过后面的  NEW按钮选择自己的JDK安装路径即可 (注意选择的是bin的上一层)
     2.  Java EE version   推荐JAVA EE 8
-    3.  Application Server 关联Tomcat容器,如果没有, NEW按钮选择自己的Tomcat安装路径即可  (注意选择的是bin的上一层)
+    3.  Application Server 关联Tomcat容器，如果没有, NEW按钮选择自己的Tomcat安装路径即可  (注意选择的是bin的上一层)
     4.  Additional Libraries and Freameworks 中 必须勾选 Web Applicaiton(4.0)选项 同时注意 create web.xml勾选上
 2.  自定义项目名,项目存放路径中注意不要出现 双 \ 和特殊符号中文空格等
     ![](./image/image_ATsYoAv024.png)
+
+### 新版IDEA创建Web工程
+
+新版IDEA创建Web工程方式不太一样，通过Maven管理依赖。
+
+![](assets/image-20230818135654998.png)![](assets/image-20230818135827488.png)
 
 ### 目录结构
 
@@ -55,6 +61,11 @@ index: true
 `src目录`  : 用于定义Java源代码
 `web目录`  :  中用于存放一些页面资源( 如果上一步没有勾选Web Applicaiton(4.0)选项),则不会出现web目录
 `External Libraries `  :  中要出现 JDK1.8 和Tomcat jsp-api和servlet-api 才可以正常编写JAVAWEB项目
+
+### 新版IDEA目录结构
+
+![](assets/image-20230818140037600.png)
+`pom.xml`文件为Maven项目中的文件，用来管理依赖，项目创建成功后，要保证Maven正确加载。
 
 ## 使用IDEA运行项目
 
@@ -84,31 +95,31 @@ index: true
 
 ### 第一种\[默认]
 
-在Idea中默认的并不会把web项目真正的部署到Tomcat的webapps目录中，而是通过为每个web项目创建一个独立的Tomcat副本并在Tomcat副本中通过的Tomcat的Context组件完成项目的目录指定，在Context组件的docBase属性中会指定Idea对web项目编译后的目录out/artifacts/.....。
+在Idea中默认的并不会把web项目真正的部署到Tomcat的webapps目录中，而是通过为每个web项目创建一个独立的Tomcat副本并在Tomcat副本中通过的Tomcat的Context组件完成项目的目录指定，在Context组件的docBase属性中会指定Idea对web项目编译后的目录。
 
 ![](./image/image_57H5n0mcUy.png)
 
 默认部署方式:
-Idea会在C:\Users\Administrator\\.IntelliJIdea2019.2\system\tomcat中为每个Web项目创建一个独立的Tomcat副本。
+Idea会在`C:\Users\lengyue\AppData\Local\JetBrains\IntelliJIdea2023.2\tomcat`中为每个Web项目创建一个独立的Tomcat副本。
 
-![](./image/image_iQk92gdmtO.png)
+![](assets/image-20230818142418474.png)
 
-`C:\Users\Administrator\.IntelliJIdea2019.2\system\tomcat\Tomcat_9_0_34_demo_4\conf\Catalina\localhost`目录中生成一个该项目的xml文件名称为：”项目名.xml”
+`C:\Users\lengyue\AppData\Local\JetBrains\IntelliJIdea2023.2\tomcat\be239715-52af-433a-82b0-2a69e4f6ae51\conf\Catalina\localhost`目录中生成一个该项目的xml文件名称为：”项目名.xml”
 
-![](./image/image_F-0Cpixwxe.png)
+![](assets/image-20230818142531900.png)
 
 Idea通过执行Tomcat的`catalina.bat`启动脚本启动Tomcat，通过启动参数来指定启动Tomcat副本运行指定目录中的web项目
 
-![](./image/image_lNIj3_DR5D.png)
+![](assets/image-20230818142645584.png)
 
 Idea在启动Tomcat之前会先在操作系统中设置一些临时环境变量，这些变量会被Tomcat的启动脚本所读取
 
-![](./image/image_oQUOg5ozzn.png)
+![](assets/image-20230818142750002.png)
 
 `CATALINA_BASE`：是Tomcat副本的工作目录
 `CATALINA_HOME`：是Tomcat的安装目录
 
-在Catalina.bat启动脚本运行时，会先去判断脚本中的`CATALINA_HOME`以及`CATALINA_BASE`是否有默认值，如果没有则直接读取系统环境变量中的值作为他们的默认值。由于Idea在启动Tomcat之前已经设置了临时环境变量，所以tomcat在启动后就会运行部署在Tomcat副本中的web项目
+在Catalina.bat启动脚本运行时，会先去判断脚本中的`CATALINA_HOME`以及`CATALINA_BASE`是否有默认值，如果没有则直接读取系统环境变量中的值作为他们的默认值。由于Idea在启动Tomcat之前已经设置了临时环境变量，所以Tomcat在启动后就会运行部署在Tomcat副本中的web项目
 
 ![](./image/image_CP9WBY0-dE.png)
 
