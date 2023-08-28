@@ -3,7 +3,7 @@ title: url-pattern的匹配规则与注解模式
 icon: file
 order: 1
 author: FrostyLunar
-date: 2023-06-15 周四
+date: 2023-08-21 周一
 category:
 	- 初级开发工程师
 tag:
@@ -11,6 +11,7 @@ tag:
 sticky: true
 index: true
 ---
+
 
 
 ## url-pattern
@@ -25,7 +26,7 @@ index: true
 <servlet-mapping>
     <servlet-name>demoServlet</servlet-name>
     <url-pattern>/demo.do</url-pattern>
-  </servlet-mapping>
+</servlet-mapping>
 ```
 
 | 路径                                              | 结果      |
@@ -71,7 +72,7 @@ index: true
 
 #### 任意匹配
 
-匹配`/`。匹配所有但不包含JSP页面
+`/`匹配所有但不包含JSP页面
 
 ```xml
 <servlet-mapping>
@@ -94,7 +95,7 @@ index: true
 ```xml
 <servlet-mapping>
 	<servlet-name>demoServlet</servlet-name>
-	<url-pattern>/</url-pattern>
+	<url-pattern>/*</url-pattern>
 </servlet-mapping>
 ```
 
@@ -168,8 +169,7 @@ index: true
 
 ## 注解模式
 
-在Servlet3.0以及之后的版本中支持注解式开发Servlet
-
+在Servlet3.0以及之后的版本中支持注解式开发Servlet。
 对于Servlet的配置不在依赖于`web.xml`配置文件而是使用`@WebServlet`将一个继承于`javax.servlet.http.HttpServlet`的类定义为Servlet组件
 
 ### @WebServlet注解中属性
@@ -187,4 +187,24 @@ index: true
 
 ### 使用案例
 
-![](./image/image_vMR_o1YjsI.png)
+```java
+@WebServlet(urlPatterns = "/servlet5.do"  
+        , description = "测试注解开发",  
+        initParams = {  
+                @WebInitParam(name = "brand", value = "三星"),  
+                @WebInitParam(name = "screen", value = "折叠屏")  
+        })  
+public class Servlet5 extends HttpServlet {  
+    @Override  
+    public void service(ServletRequest req, ServletResponse res) {  
+        ServletConfig servletConfig = this.getServletConfig();  
+        String brand = servletConfig.getInitParameter("brand");  
+        System.out.println("brand = " + brand);  
+        String screen = servletConfig.getInitParameter("screen");  
+        System.out.println("screen = " + screen);  
+    }  
+}
+```
+![](assets/image-20230821160311549.png)
+
+

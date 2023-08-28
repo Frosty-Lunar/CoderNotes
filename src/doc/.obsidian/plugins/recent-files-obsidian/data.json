@@ -1,12 +1,144 @@
 {
   "recentFiles": [
     {
-      "basename": "继承结构与生命周期",
-      "path": "02_初级开发工程师/01_第一阶段/04_JavaEE技术/03_Servlet/04_继承结构与生命周期/继承结构与生命周期.md"
+      "basename": "Docker网络介绍",
+      "path": "02_初级开发工程师/第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/02_Docker进阶实践/01_Docker网络介绍/Docker网络介绍.md"
+    },
+    {
+      "basename": "DockerFile",
+      "path": "02_初级开发工程师/第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/01_Docker基础入门/06_DockerFile/DockerFile.md"
+    },
+    {
+      "basename": "Docker进阶实践",
+      "path": "02_初级开发工程师/第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/02_Docker进阶实践/Docker进阶实践.md"
+    },
+    {
+      "basename": "Docker基础入门+实践",
+      "path": "02_初级开发工程师/第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/Docker基础入门+实践.md"
+    },
+    {
+      "basename": "Docker基础入门",
+      "path": "02_初级开发工程师/第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/01_Docker基础入门/Docker基础入门.md"
+    },
+    {
+      "basename": "第二阶段",
+      "path": "02_初级开发工程师/第二阶段/第二阶段.md"
+    },
+    {
+      "basename": "初级开发工程师",
+      "path": "02_初级开发工程师/初级开发工程师.md"
+    },
+    {
+      "basename": "Docker基础入门+实践",
+      "path": "01_Docker基础入门+实践/Docker基础入门+实践.md"
+    },
+    {
+      "basename": "云原生容器化入门",
+      "path": "02_初级开发工程师/第三阶段/02_云原生容器化入门/云原生容器化入门.md"
+    },
+    {
+      "basename": "第三阶段",
+      "path": "02_初级开发工程师/第三阶段/第三阶段.md"
+    },
+    {
+      "basename": "template_metainfo_yaml",
+      "path": "00_Templates/template_metainfo_yaml.md"
+    },
+    {
+      "basename": "DQL（多表）",
+      "path": "02_初级开发工程师/01_第一阶段/02_数据库和JDBC/01_MySQL/06_DQL（多表）/DQL（多表）.md"
+    },
+    {
+      "basename": "数据卷容器",
+      "path": "02_初级开发工程师/第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/01_Docker基础入门/05_数据卷容器/数据卷容器.md"
+    },
+    {
+      "basename": "Docker数据卷",
+      "path": "02_初级开发工程师/第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/01_Docker基础入门/04_Docker数据卷/Docker数据卷.md"
+    },
+    {
+      "basename": "Servlet",
+      "path": "02_初级开发工程师/01_第一阶段/04_JavaEE技术/03_Servlet/Servlet.md"
+    },
+    {
+      "basename": "Docker镜像文件介绍",
+      "path": "02_初级开发工程师/第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/01_Docker基础入门/03_Docker镜像文件介绍/Docker镜像文件介绍.md"
+    },
+    {
+      "basename": "Docker的常用命令",
+      "path": "02_初级开发工程师/第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/01_Docker基础入门/02_Docker的常用命令/Docker的常用命令.md"
+    },
+    {
+      "basename": "开发必备工具",
+      "path": "01_JavaSE阶段/C_开发必备工具/开发必备工具.md"
+    },
+    {
+      "basename": "Docker的介绍与安装",
+      "path": "02_初级开发工程师/第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/01_Docker基础入门/01_Docker的介绍与安装/Docker的介绍与安装.md"
+    },
+    {
+      "basename": "微服务入门",
+      "path": "02_初级开发工程师/第三阶段/01_微服务入门/微服务入门.md"
+    },
+    {
+      "basename": "第一阶段",
+      "path": "02_初级开发工程师/01_第一阶段/第一阶段.md"
+    },
+    {
+      "basename": "数据库和JDBC",
+      "path": "02_初级开发工程师/01_第一阶段/02_数据库和JDBC/数据库和JDBC.md"
+    },
+    {
+      "basename": "阿里代码规范",
+      "path": "02_初级开发工程师/01_第一阶段/01_阿里代码规范/阿里代码规范.md"
+    },
+    {
+      "basename": "提高阶段",
+      "path": "06_提高阶段/提高阶段.md"
+    },
+    {
+      "basename": "域对象",
+      "path": "02_初级开发工程师/01_第一阶段/04_JavaEE技术/03_Servlet/10_域对象/域对象.md"
+    },
+    {
+      "basename": "会话管理Cookie和Session",
+      "path": "02_初级开发工程师/01_第一阶段/04_JavaEE技术/03_Servlet/09_会话管理Cookie和Session/会话管理Cookie和Session.md"
+    },
+    {
+      "basename": "VMware网络设置",
+      "path": "01_JavaSE阶段/C_开发必备工具/05_VMware网络设置/VMware网络设置.md"
+    },
+    {
+      "basename": "概念与安装",
+      "path": "02_初级开发工程师/01_第一阶段/02_数据库和JDBC/01_MySQL/01_概念与安装/概念与安装.md"
+    },
+    {
+      "basename": "路径问题",
+      "path": "02_初级开发工程师/01_第一阶段/04_JavaEE技术/03_Servlet/08_路径问题/路径问题.md"
+    },
+    {
+      "basename": "请求转发和响应重定向",
+      "path": "02_初级开发工程师/01_第一阶段/04_JavaEE技术/03_Servlet/07_请求转发和响应重定向/请求转发和响应重定向.md"
     },
     {
       "basename": "乱码的处理",
       "path": "02_初级开发工程师/01_第一阶段/04_JavaEE技术/03_Servlet/03_乱码的处理/乱码的处理.md"
+    },
+    {
+      "basename": "url-pattern的匹配规则与注解模式",
+      "path": "02_初级开发工程师/01_第一阶段/04_JavaEE技术/03_Servlet/06_url-pattern的匹配规则与注解模式/url-pattern的匹配规则与注解模式.md"
+    },
+    {
+      "basename": "JavaSE阶段",
+      "path": "01_JavaSE阶段/JavaSE阶段.md"
+    },
+    {
+      "basename": "ServletContext和ServlectConfig",
+      "path": "02_初级开发工程师/01_第一阶段/04_JavaEE技术/03_Servlet/05_ServletContext和ServlectConfig/ServletContext和ServlectConfig.md"
+    },
+    {
+      "basename": "继承结构与生命周期",
+      "path": "02_初级开发工程师/01_第一阶段/04_JavaEE技术/03_Servlet/04_继承结构与生命周期/继承结构与生命周期.md"
     },
     {
       "basename": "image-20230819194714712",
@@ -37,10 +169,6 @@
       "path": "02_初级开发工程师/01_第一阶段/04_JavaEE技术/03_Servlet/03_乱码的处理/assets/image-20230819181244994.png"
     },
     {
-      "basename": "Servlet",
-      "path": "02_初级开发工程师/01_第一阶段/04_JavaEE技术/03_Servlet/Servlet.md"
-    },
-    {
       "basename": "JavaWeb项目的开发与部署",
       "path": "02_初级开发工程师/01_第一阶段/04_JavaEE技术/01_Tomcat/05_JavaWeb项目的开发与部署/JavaWeb项目的开发与部署.md"
     },
@@ -63,142 +191,6 @@
     {
       "basename": "image_DCbQ_BuSiP",
       "path": "01_JavaSE阶段/B_进阶/02_常用类/06_StringBuilder与StringBuffer类/image/image_DCbQ_BuSiP.png"
-    },
-    {
-      "basename": "StringBuilder与StringBuffer类",
-      "path": "01_JavaSE阶段/B_进阶/02_常用类/06_StringBuilder与StringBuffer类/StringBuilder与StringBuffer类.md"
-    },
-    {
-      "basename": "String类",
-      "path": "01_JavaSE阶段/B_进阶/02_常用类/05_String类/String类.md"
-    },
-    {
-      "basename": "Random类",
-      "path": "01_JavaSE阶段/B_进阶/02_常用类/04_Random类/Random类.md"
-    },
-    {
-      "basename": "Math类",
-      "path": "01_JavaSE阶段/B_进阶/02_常用类/03_Math类/Math类.md"
-    },
-    {
-      "basename": "日期相关类",
-      "path": "01_JavaSE阶段/B_进阶/02_常用类/02_日期相关类/日期相关类.md"
-    },
-    {
-      "basename": "Echarts动态图表",
-      "path": "02_初级开发工程师/01_第一阶段/03_前端技术/05_Echarts动态图表/Echarts动态图表.md"
-    },
-    {
-      "basename": "JavaEE简介",
-      "path": "02_初级开发工程师/01_第一阶段/04_JavaEE技术/01_Tomcat/01_JavaEE简介/JavaEE简介.md"
-    },
-    {
-      "basename": "HTTP协议",
-      "path": "02_初级开发工程师/01_第一阶段/04_JavaEE技术/02_HTTP协议/HTTP协议.md"
-    },
-    {
-      "basename": "搭建Mybatis项目环境",
-      "path": "02_初级开发工程师/01_第一阶段/05_基础框架/01_Mybatis基础/02_搭建Mybatis项目环境/搭建Mybatis项目环境.md"
-    },
-    {
-      "basename": "项目实践",
-      "path": "07_项目实践/项目实践.md"
-    },
-    {
-      "basename": "中级开发工程师",
-      "path": "04_中级开发工程师/中级开发工程师.md"
-    },
-    {
-      "basename": "计算机基础知识",
-      "path": "03_计算机基础知识/计算机基础知识.md"
-    },
-    {
-      "basename": "初级开发工程师",
-      "path": "02_初级开发工程师/初级开发工程师.md"
-    },
-    {
-      "basename": "Tomcat的配置与组件",
-      "path": "02_初级开发工程师/01_第一阶段/04_JavaEE技术/01_Tomcat/04_Tomcat的配置与组件/Tomcat的配置与组件.md"
-    },
-    {
-      "basename": "image-20230816235947288",
-      "path": "02_初级开发工程师/01_第一阶段/04_JavaEE技术/01_Tomcat/03_Tomcat部署项目/assets/image-20230816235947288.png"
-    },
-    {
-      "basename": "image-20230816235744501",
-      "path": "02_初级开发工程师/01_第一阶段/04_JavaEE技术/01_Tomcat/03_Tomcat部署项目/assets/image-20230816235744501.png"
-    },
-    {
-      "basename": "image-20230816235634901",
-      "path": "02_初级开发工程师/01_第一阶段/04_JavaEE技术/01_Tomcat/03_Tomcat部署项目/assets/image-20230816235634901.png"
-    },
-    {
-      "basename": "image-20230816235506690",
-      "path": "02_初级开发工程师/01_第一阶段/04_JavaEE技术/01_Tomcat/03_Tomcat部署项目/assets/image-20230816235506690.png"
-    },
-    {
-      "basename": "image-20230816235456777",
-      "path": "02_初级开发工程师/01_第一阶段/04_JavaEE技术/01_Tomcat/03_Tomcat部署项目/assets/image-20230816235456777.png"
-    },
-    {
-      "basename": "Tomcat部署项目",
-      "path": "02_初级开发工程师/01_第一阶段/04_JavaEE技术/01_Tomcat/03_Tomcat部署项目/Tomcat部署项目.md"
-    },
-    {
-      "basename": "Tomcat的安装与结构",
-      "path": "02_初级开发工程师/01_第一阶段/04_JavaEE技术/01_Tomcat/02_Tomcat的安装与结构/Tomcat的安装与结构.md"
-    },
-    {
-      "basename": "template_metainfo_yaml",
-      "path": "00_Templates/template_metainfo_yaml.md"
-    },
-    {
-      "basename": "连接池的使用",
-      "path": "02_初级开发工程师/01_第一阶段/02_数据库和JDBC/02_JDBC/07_连接池的使用/连接池的使用.md"
-    },
-    {
-      "basename": "DAO",
-      "path": "02_初级开发工程师/01_第一阶段/02_数据库和JDBC/02_JDBC/06_DAO/DAO.md"
-    },
-    {
-      "basename": "Log4j日志框架",
-      "path": "02_初级开发工程师/01_第一阶段/02_数据库和JDBC/02_JDBC/08_Log4j日志框架/Log4j日志框架.md"
-    },
-    {
-      "basename": "JDBC的API整理",
-      "path": "02_初级开发工程师/01_第一阶段/02_数据库和JDBC/02_JDBC/05_JDBC的API整理/JDBC的API整理.md"
-    },
-    {
-      "basename": "批处理与事务",
-      "path": "02_初级开发工程师/01_第一阶段/02_数据库和JDBC/02_JDBC/04_批处理与事务/批处理与事务.md"
-    },
-    {
-      "basename": "SQL注入和预编译",
-      "path": "02_初级开发工程师/01_第一阶段/02_数据库和JDBC/02_JDBC/03_SQL注入和预编译/SQL注入和预编译.md"
-    },
-    {
-      "basename": "学习路线",
-      "path": "学习路线.md"
-    },
-    {
-      "basename": "Drawing 2023-08-16 09.26.35.excalidraw",
-      "path": "Excalidraw/Drawing 2023-08-16 09.26.35.excalidraw.md"
-    },
-    {
-      "basename": "前端技术",
-      "path": "02_初级开发工程师/01_第一阶段/03_前端技术/前端技术.md"
-    },
-    {
-      "basename": "JQuery",
-      "path": "02_初级开发工程师/01_第一阶段/03_前端技术/04_JQuery/JQuery.md"
-    },
-    {
-      "basename": "初识JQuery",
-      "path": "02_初级开发工程师/01_第一阶段/03_前端技术/04_JQuery/01_初识JQuery/初识JQuery.md"
-    },
-    {
-      "basename": "StreamAPI",
-      "path": "01_JavaSE阶段/D_JDK新特性/01_JDK8新特性/04_StreamAPI/StreamAPI.md"
     }
   ],
   "omittedPaths": [],

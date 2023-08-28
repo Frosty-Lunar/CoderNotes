@@ -3,7 +3,7 @@ title: 会话管理Cookie和Session
 icon: file
 order: 1
 author: FrostyLunar
-date: 2023-06-15 周四
+date: 2023-08-21 周一
 category:
 	- 初级开发工程师
 tag:
@@ -12,7 +12,6 @@ sticky: true
 index: true
 ---
 
-
 ## 初识Cookie和Session
 
 ### 相关概念
@@ -20,7 +19,6 @@ index: true
 Cookie对象与HttpSession对象的作用是维护客户端浏览器与服务端的会话状态的两个对象。
 
 **由于HTTP协议是一个无状态的协议，所以服务端并不会记录当前客户端浏览器的访问状态**，但是在有些时候我们是需要服务端能够记录客户端浏览器的访问状态的，如获取当前客户端浏览器的访问服务端的次数时就需要会话状态的维持。
-
 在Servlet中提供了Cookie对象与HttpSession对象用于维护客户端与服务端的会话状态的维持。二者不同的是**Cookie是通过客户端浏览器实现会话的维持，而HttpSession是通过服务端来实现会话状态的维持。**
 
 ### 执行流程
@@ -33,7 +31,7 @@ Cookie对象与HttpSession对象的作用是维护客户端浏览器与服务端
 
 ## Cookie的使用
 
-Cookie是一种保存少量信息至浏览器的一种技术,**第一请求时,服务器可以响应给浏览器一些Cookie信息**,**第二次请求,浏览器会携带之前的cookie发送给服务器**,通过这种机制可以实现在浏览器端保留一些用户信息.为服务端获取用户状态获得依据
+Cookie是一种保存少量信息至浏览器的一种技术，**第一次请求时，服务器可以响应给浏览器一些Cookie信息**，**第二次请求,浏览器会携带之前的cookie发送给服务器**，通过这种机制可以实现在浏览器端保留一些用户信息，为服务端获取用户状态获得依据。
 
 ### Cookie对象的特点
 
@@ -90,11 +88,11 @@ URLDecoder.decode("content","code")
     浏览器会缓存Cookie对象。浏览器关闭后Cookie对象销毁
 -   持久化Cookie
     **使用Cookie对象下的** `cookie.setMaxAge(60)` **方法设置失效时间，单位为秒。一旦设置了失效时间，那么该Cookie为持久化Cookie**
-    浏览器会对Cookie做持久化处理，基于文件形式保存在系统的指定目录中. 在Windows10系统中为了安全问题不会显示Cookie中的内容.
+    浏览器会对Cookie做持久化处理，基于文件形式保存在系统的指定目录中. 在Windows10系统中为了安全问题不会显示Cookie中的内容。
 
-#### Cookie跨越
+#### Cookie跨域
 
-Cookie不支持一级域名的跨域，支持二级域名的跨域.
+Cookie不支持一级域名的跨域，支持二级域名的跨域。
 
 ![](./image/image_9qauvAfiiC.png)
 
@@ -142,6 +140,8 @@ public class Servlet3 extends HttpServlet {
     }
 }
 ```
+![](assets/image-20230822001351331.png)
+
 
 ## Cookie案例
 
@@ -193,7 +193,7 @@ public class Servlet4 extends HttpServlet {
 
 ## Session的使用
 
-HttpSession是一种保存少量信息至服务器端的一种技术,第一请求时,服务器会创建HttpSession,我们可以在HttpSession对象中保存一些关于用户的状态信息,并将HttpSession的JSESSIONID以Cookie形式响应给浏览器 .  第二次请求,浏览器会携带之前的JSESSIONID的Cookie,发送给服务器,服务器根据JSESSIONID获取对应的HttpSession对象.通过这种技术可以解决HTTP协议本身无法记录用户状态情况.
+HttpSession是一种保存少量信息至服务器端的一种技术,第一次请求时,服务器会创建HttpSession,我们可以在HttpSession对象中保存一些关于用户的状态信息,并将HttpSession的JSESSIONID以Cookie形式响应给浏览器 .  第二次请求时,浏览器会携带之前的JSESSIONID的Cookie,发送给服务器,服务器根据JSESSIONID获取对应的HttpSession对象.通过这种技术可以解决HTTP协议本身无法记录用户状态的情况.
 
 ![](./image/image_GBMpnKXwOU.png)
 
@@ -274,7 +274,7 @@ public class Servlet6 extends HttpServlet {
 #### 销毁方式
 
 -   **方式一:  通过web.xml文件指定超时时间(最大不活动时间)**
-    我们可以在web.xml文件中指定HttpSession的超时时间，当到达指定的超时时间后，容器就会销该HttpSession对象，单位为分钟。该时间对整个web项目中的所有HttpSession对象有效。时间的计算方式是根据最后一次请求时间作为起始时间。如果有哪个客户端浏览器对应的HttpSession的失效时间已到，那么与该客户端浏览器对应的HttpSession对象就会被销毁。其他客户端浏览器对应的HttpSession对象会继续保存不会被销毁。
+    我们可以在web.xml文件中指定HttpSession的超时时间，当到达指定的超时时间后，容器就会销毁HttpSession对象，单位为分钟。该时间对整个web项目中的所有HttpSession对象有效。时间的计算方式是根据最后一次请求时间作为起始时间。如果有哪个客户端浏览器对应的HttpSession的失效时间已到，那么与该客户端浏览器对应的HttpSession对象就会被销毁。其他客户端浏览器对应的HttpSession对象会继续保存不会被销毁。
     ```xml
     <session-config>
         <session-timeout>1</session-timeout>

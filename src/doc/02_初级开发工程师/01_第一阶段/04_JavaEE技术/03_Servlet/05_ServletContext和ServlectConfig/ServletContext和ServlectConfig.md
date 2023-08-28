@@ -20,8 +20,8 @@ ServletContext官方叫**Servlet上下文**。服务器会为**每一个Web应�
 
 ### 作用与API
 
--   相对路径转绝对路径
--   获取容器的附加信息
+-   **相对路径转绝对路径**
+-   **获取容器的附加信息**
 -   **读取配置信息**
 -   **全局容器**
 
@@ -40,109 +40,99 @@ ServletContext官方叫**Servlet上下文**。服务器会为**每一个Web应�
 
 ### 生命周期
 
-当容器启动时会创建ServletContext对象并一直缓存该对象,直到容器关闭后该对象生命周期结束.
-
+当容器启动时会创建ServletContext对象并一直缓存该对象,直到容器关闭后该对象生命周期结束。
 ServletContext对象的生命周期非常长，所以在使用全局容器时不建议存放业务数据。
 
 ### 使用案例
 
 案例一
 
+```xml
+<!--设置全局初始信息-->  
+<context-param>  
+    <param-name>username</param-name>  
+    <param-value>FrostyLunar</param-value>  
+</context-param>  
+<context-param>  
+    <param-name>password</param-name>  
+    <param-value>123456</param-value>  
+</context-param>
+```
+
 ```java
-public class Servlet1 extends HttpServlet {
-    @Override
-    protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        //获取Servlet对象的方式
-        // 通过req对象
-        ServletContext servletContext1 = req.getServletContext();
-        // 通过继承的方法
-        ServletContext servletContext2 = this.getServletContext();
-        System.out.println(servletContext1 == servletContext2);
-        
-        
-        // 获取当前项目的部署名
-        String contextPath = servletContext1.getContextPath();
-        System.out.println("contextPath"+contextPath);
-        // 将一个相对路径转化为项目的绝对路径
-        String fileUpload = servletContext1.getRealPath("fileUpload");
-        System.out.println(fileUpload);
-        String serverInfo = servletContext1.getServerInfo();
-        System.out.println("servletInfo"+serverInfo);
-        int majorVersion = servletContext1.getMajorVersion();
-        int minorVersion = servletContext1.getMinorVersion();
-        System.out.println(majorVersion+":"+minorVersion);
-        
-        // 获取web.xml中配置的全局的初始信息
-        String username = servletContext1.getInitParameter("username");
-        String password = servletContext1.getInitParameter("password");
-        System.out.println(username+":"+password);
-        
-        //向ServletContext对象中增加数据 域对象
-        List<String> data=new ArrayList<>();
-        Collections.addAll(data,"张三","李四","王五");
-        servletContext1.setAttribute("list",data);
-        servletContext1.setAttribute("gender","boy");
-    }
+package com.frostylunar.servletcontexttest;  
+  
+import javax.servlet.ServletContext;  
+import javax.servlet.ServletRequest;  
+import javax.servlet.ServletResponse;  
+import javax.servlet.http.HttpServlet;  
+import java.util.Enumeration;  
+  
+public class Servlet1 extends HttpServlet {  
+    @Override  
+    public void service(ServletRequest req, ServletResponse res) {  
+        //获取Servlet对象的方式  
+        //通过req对象  
+        ServletContext servletContext1 = req.getServletContext();  
+        //通过继承的方法  
+        ServletContext servletContext2 = this.getServletContext();  
+        //判断两种方式获得的ServletContext对象是否为同一个对象  
+        System.out.println(servletContext1 == servletContext2); //true  
+        //获取项目部署名  
+        String contextPath = servletContext1.getContextPath();  
+        System.out.println(contextPath); // /ServletContextTest_war_exploded  
+        //获取文件真实路径  
+        String fileUpload = servletContext1.getRealPath("fileUpload");  
+        System.out.println(fileUpload);// E:\JAVA\JavaEE\JavaWebLearn\ServletContextTest\target\ServletContextTest-1.0-SNAPSHOT\fileUpload  
+        //返回此Servlet容器支持的Servlet API的主要版本  
+        int majorVersion = servletContext1.getMajorVersion();  
+        //返回此Servlet容器支持的Servlet API的次要版本  
+        int minorVersion = servletContext1.getMinorVersion();  
+        System.out.println(majorVersion + ":" + minorVersion); //4:0  
+        //获取web.xml中的全局初始信息，根据key获取value  
+        String username = servletContext1.getInitParameter("username");  
+        System.out.println("username = " + username);// username = FrostyLunar  
+        String password = servletContext1.getInitParameter("password");  
+        System.out.println("password = " + password);// password = 123456  
+        //获取web.xml中的全局初始信息，获取全部键值对，返回值为枚举类型  
+        Enumeration<String> initParameterNames = servletContext1.getInitParameterNames();  
+        while (initParameterNames.hasMoreElements()) {  
+            String key = initParameterNames.nextElement();  
+            String value = servletContext1.getInitParameter(key);  
+            System.out.println(key + ":" + value);  
+        }  
+    }  
 }
 ```
+![](assets/image-20230820175204482.png)
 
 案例二
 
 ```java
-public class Servlet2 extends HttpServlet {
-    @Override
-    protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        ServletContext servletContext = this.getServletContext();
-        // 获取web.xml中配置的全局的初始信息
-        Enumeration<String> pnames = servletContext.getInitParameterNames();
-        while(pnames.hasMoreElements()){
-            String e = pnames.nextElement();
-            System.out.println(e+":"+servletContext.getInitParameter(e));
-        }
-        List<String> list = (List<String>) servletContext.getAttribute("list");
-        System.out.println(list);
-        String gender = (String)servletContext.getAttribute("gender");
-        System.out.println(gender);
-    }
+public class Servlet1 extends HttpServlet {  
+    @Override  
+    public void service(ServletRequest req, ServletResponse res) {  
+        ServletContext servletContext = req.getServletContext();
+        servletContext.setAttribute("list", Arrays.asList("张三", "李四", "王五"));  
+        servletContext.setAttribute("name", "小王八蛋");  
+    }  
 }
 ```
 
-XML
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
-         version="4.0">
-     <servlet>
-        <servlet-name>servlet1</servlet-name>
-        <servlet-class>com.meturing.testServlet.Servlet1</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>servlet2</servlet-name>
-        <servlet-class>com.meturing.testServlet.Servlet2</servlet-class>
-    </servlet>
-   <servlet-mapping>
-        <servlet-name>servlet1</servlet-name>
-        <url-pattern>/servlet1.do</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>servlet2</servlet-name>
-        <url-pattern>/servlet2.do</url-pattern>
-    </servlet-mapping>
-    
-    <context-param>
-        <param-name>username</param-name>
-        <param-value>mashibing</param-value>
-    </context-param>
-    <context-param>
-        <param-name>password</param-name>
-        <param-value>123456</param-value>
-    </context-param>
-    
-</web-app>
+```java
+public class Servlet2 extends HttpServlet {  
+    @Override  
+    public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {  
+        ServletContext servletContext = req.getServletContext();  
+        List list = (List) servletContext.getAttribute("list");  
+        list.forEach(System.out::println);  
+        String name = (String) servletContext.getAttribute("name");  
+        System.out.println(name);  
+    }  
+}
 ```
+
+![](assets/image-20230820184041237.png)
 
 ## ServletConfig对象
 
