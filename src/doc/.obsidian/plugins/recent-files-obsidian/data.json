@@ -1,44 +1,64 @@
 {
   "recentFiles": [
     {
-      "basename": "Docker网络介绍",
-      "path": "02_初级开发工程师/第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/02_Docker进阶实践/01_Docker网络介绍/Docker网络介绍.md"
+      "basename": "Docker进阶实践",
+      "path": "02_初级开发工程师/03_第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/02_Docker进阶实践/Docker进阶实践.md"
+    },
+    {
+      "basename": "Swarm",
+      "path": "02_初级开发工程师/03_第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/02_Docker进阶实践/05_Swarm/Swarm.md"
+    },
+    {
+      "basename": "Harbor",
+      "path": "02_初级开发工程师/03_第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/02_Docker进阶实践/04_Harbor/Harbor.md"
+    },
+    {
+      "basename": "DockerCompose",
+      "path": "02_初级开发工程师/03_第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/02_Docker进阶实践/03_DockerCompose/DockerCompose.md"
+    },
+    {
+      "basename": "Docker实战",
+      "path": "02_初级开发工程师/03_第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/02_Docker进阶实践/02_Docker实战/Docker实战.md"
     },
     {
       "basename": "DockerFile",
-      "path": "02_初级开发工程师/第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/01_Docker基础入门/06_DockerFile/DockerFile.md"
+      "path": "02_初级开发工程师/03_第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/01_Docker基础入门/06_DockerFile/DockerFile.md"
     },
     {
-      "basename": "Docker进阶实践",
-      "path": "02_初级开发工程师/第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/02_Docker进阶实践/Docker进阶实践.md"
-    },
-    {
-      "basename": "Docker基础入门+实践",
-      "path": "02_初级开发工程师/第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/Docker基础入门+实践.md"
+      "basename": "Docker网络介绍",
+      "path": "02_初级开发工程师/03_第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/02_Docker进阶实践/01_Docker网络介绍/Docker网络介绍.md"
     },
     {
       "basename": "Docker基础入门",
-      "path": "02_初级开发工程师/第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/01_Docker基础入门/Docker基础入门.md"
+      "path": "02_初级开发工程师/03_第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/01_Docker基础入门/Docker基础入门.md"
     },
     {
-      "basename": "第二阶段",
-      "path": "02_初级开发工程师/第二阶段/第二阶段.md"
+      "basename": "Docker的介绍与安装",
+      "path": "02_初级开发工程师/03_第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/01_Docker基础入门/01_Docker的介绍与安装/Docker的介绍与安装.md"
     },
     {
-      "basename": "初级开发工程师",
-      "path": "02_初级开发工程师/初级开发工程师.md"
+      "basename": "Docker基础入门+实践",
+      "path": "02_初级开发工程师/03_第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/Docker基础入门+实践.md"
+    },
+    {
+      "basename": "云原生容器化入门",
+      "path": "02_初级开发工程师/03_第三阶段/02_云原生容器化入门/云原生容器化入门.md"
     },
     {
       "basename": "Docker基础入门+实践",
       "path": "01_Docker基础入门+实践/Docker基础入门+实践.md"
     },
     {
-      "basename": "云原生容器化入门",
-      "path": "02_初级开发工程师/第三阶段/02_云原生容器化入门/云原生容器化入门.md"
+      "basename": "第三阶段",
+      "path": "02_初级开发工程师/03_第三阶段/第三阶段.md"
     },
     {
-      "basename": "第三阶段",
-      "path": "02_初级开发工程师/第三阶段/第三阶段.md"
+      "basename": "第二阶段",
+      "path": "02_初级开发工程师/02_第二阶段/第二阶段.md"
+    },
+    {
+      "basename": "初级开发工程师",
+      "path": "02_初级开发工程师/初级开发工程师.md"
     },
     {
       "basename": "template_metainfo_yaml",
@@ -50,11 +70,11 @@
     },
     {
       "basename": "数据卷容器",
-      "path": "02_初级开发工程师/第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/01_Docker基础入门/05_数据卷容器/数据卷容器.md"
+      "path": "02_初级开发工程师/03_第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/01_Docker基础入门/05_数据卷容器/数据卷容器.md"
     },
     {
       "basename": "Docker数据卷",
-      "path": "02_初级开发工程师/第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/01_Docker基础入门/04_Docker数据卷/Docker数据卷.md"
+      "path": "02_初级开发工程师/03_第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/01_Docker基础入门/04_Docker数据卷/Docker数据卷.md"
     },
     {
       "basename": "Servlet",
@@ -62,23 +82,19 @@
     },
     {
       "basename": "Docker镜像文件介绍",
-      "path": "02_初级开发工程师/第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/01_Docker基础入门/03_Docker镜像文件介绍/Docker镜像文件介绍.md"
+      "path": "02_初级开发工程师/03_第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/01_Docker基础入门/03_Docker镜像文件介绍/Docker镜像文件介绍.md"
     },
     {
       "basename": "Docker的常用命令",
-      "path": "02_初级开发工程师/第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/01_Docker基础入门/02_Docker的常用命令/Docker的常用命令.md"
+      "path": "02_初级开发工程师/03_第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/01_Docker基础入门/02_Docker的常用命令/Docker的常用命令.md"
     },
     {
       "basename": "开发必备工具",
       "path": "01_JavaSE阶段/C_开发必备工具/开发必备工具.md"
     },
     {
-      "basename": "Docker的介绍与安装",
-      "path": "02_初级开发工程师/第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/01_Docker基础入门/01_Docker的介绍与安装/Docker的介绍与安装.md"
-    },
-    {
       "basename": "微服务入门",
-      "path": "02_初级开发工程师/第三阶段/01_微服务入门/微服务入门.md"
+      "path": "02_初级开发工程师/03_第三阶段/01_微服务入门/微服务入门.md"
     },
     {
       "basename": "第一阶段",
@@ -183,14 +199,6 @@
     {
       "basename": "初识Servlet",
       "path": "02_初级开发工程师/01_第一阶段/04_JavaEE技术/03_Servlet/01_初识Servlet/初识Servlet.md"
-    },
-    {
-      "basename": "前言",
-      "path": "01_JavaSE阶段/B_进阶/03_集合/01_前言/前言.md"
-    },
-    {
-      "basename": "image_DCbQ_BuSiP",
-      "path": "01_JavaSE阶段/B_进阶/02_常用类/06_StringBuilder与StringBuffer类/image/image_DCbQ_BuSiP.png"
     }
   ],
   "omittedPaths": [],

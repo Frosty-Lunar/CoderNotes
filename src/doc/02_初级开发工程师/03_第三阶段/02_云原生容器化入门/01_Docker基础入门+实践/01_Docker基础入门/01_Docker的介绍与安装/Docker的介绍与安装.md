@@ -150,19 +150,20 @@ Docker作为开发人员需要掌握，作为`运维人员`必须掌握, 一次�
 	```shell
 	sudo yum install -y yum-utils
 	sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
-```
-3. 安装Docker CE
+	```
+1. 安装Docker CE
 	```shell
 	sudo yum install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
-```
-4. 启动Docker
+	```
+1. 启动Docker
 	```shell
 	sudo systemctl start docker
-```
-5. 测试是否安装成功：查看Docker安装版本
+	```
+1. 测试是否安装成功：查看Docker安装版本
 	```shell
 	sudo docker version
-```
+	```
+
 ![](assets/image-20230824153114766.png)
 
 安装成功！
