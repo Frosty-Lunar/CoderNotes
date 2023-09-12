@@ -133,6 +133,14 @@ ${applicationScope.msg }<br/>
 </html>
 ```
 
+遇到的错误：
+
+![](assets/image-20230909200859838.png)
+
+解决方式：
+
+在`WEB_INF`目录下创建lib文件夹，将`jstl`的jar包导入项目中，同时删除Maven中的依赖。
+
 #### 多条件分支标签
 
 ##### c:if 标签
@@ -256,7 +264,7 @@ ${applicationScope.msg }<br/>
 </html>
 ```
 
-便利对象数组/List
+遍历对象数组/List
 
 ```JSP
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>

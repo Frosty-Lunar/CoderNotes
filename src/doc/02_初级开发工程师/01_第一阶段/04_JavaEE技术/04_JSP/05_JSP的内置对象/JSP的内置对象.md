@@ -140,11 +140,11 @@ JSP代码
 
 链接数据库显示所有员工信息到JSP页面,表格如下
 
-![](./assets/Pasted_image_20230403223854.png)
+![](assets/image-20230909171449073.png)
 
 ### 构建项目结构
 
-![](./assets/Pasted_image_20230403223935.png)
+![](assets/image-20230909171518805.png)
 
 ### 匹配规则
 
@@ -185,7 +185,7 @@ public class EmpDaoImpl implements EmpDao {
         PreparedStatement pstat=null;
         ResultSet resultSet=null;
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
+            Class.forName("com.mysql.jdbc.Driver");
             connection = DriverManager.getConnection(url, username, password);
             pstat = connection.prepareStatement("select * from emp");
             resultSet = pstat.executeQuery();
@@ -251,74 +251,88 @@ public class EmpServlet extends HttpServlet {
 
 JSP代码
 ```java
-<%@ page import="java.util.List" %>
-<%@ page import="com.meturing.pojo.Emp" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>Title</title>
-    <style>
-        table{
-            border: 3px solid blue;
-            width: 80%;
-            margin: 0px auto;
-        }
-        td,th{
-            border: 2px solid green;
-        }
-    </style>
-</head>
-<body>
-    <table cellspacing="0px" cellpadding="0px">
-        <tr>
-            <th>编号</th>
-            <th>姓名</th>
-            <th>上级编号</th>
-            <th>职务</th>
-            <th>入职日期</th>
-            <th>薪资</th>
-            <th>补助</th>
-            <th>部门号</th>
-            <th>薪资等级</th>
-        </tr>
-        <%
-            List<Emp> emps = (List<Emp>) request.getAttribute("emps");
-            for (Emp emp : emps) {
-        %>
-            <tr>
-                <td><%=emp.getEmpno()%></td>
-                <td><%=emp.getEname()%></td>
-                <td><%=emp.getMgr()%></td>
-                <td><%=emp.getJob()%></td>
-                <td><%=emp.getHiredate()%></td>
-                <td><%=emp.getSal()%></td>
-                <td><%=emp.getComm()%></td>
-                <td><%=emp.getDeptno()%></td>
-                <td><%--out.print("<td>")--%>
-         <%
-             Double sal = emp.getSal();
-             if(sal<=500){
-                 out.print("A");
-             }else if( sal <=1000){
-                 out.print("B");
-             }else if( sal <=1500){
-                 out.print("C");
-             }else if( sal <=2000){
-                 out.print("D");
-             }else if( sal <=3000){
-                 out.print("E");
-             }else if( sal <=4000){
-                 out.print("F");
-             }else {
-                 out.print("G");
-             }
-         %>
-                </td>
-            </tr>
-        <%
-            }
-        %>
-    </table>
-</body>
+<%@ page import="java.util.List" %>  
+<%@ page import="com.example.servletcase.pojo.Emp" %>  
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>  
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <title>JSP - Hello World</title>  
+    <!-- 引入CSS文件 -->  
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>  
+    <!-- 导入顺序:JQuery文件\bootstrap.bundle.min.js\bootstrap.min.js -->  
+    <script src="js/bootstrap.bundle.min.js"></script>  
+    <script src="js/bootstrap.min.js"></script>  
+</head>  
+<body>  
+  
+<div style="width: 1200px;margin: 0px auto">  
+    <%  
+        List<Emp> emps = (List<Emp>) request.getAttribute("emps");  
+    %>  
+    <table class="table">  
+        <thead>  
+        <tr>  
+            <th scope="col">序号</th>  
+            <th scope="col">工号</th>  
+            <th scope="col">姓名</th>  
+            <th scope="col">上级编号</th>  
+            <th scope="col">职务</th>  
+            <th scope="col">入职日期</th>  
+            <th scope="col">薪资</th>  
+            <th scope="col">补助</th>  
+            <th scope="col">部门号</th>  
+            <th scope="col">薪资等级</th>  
+        </tr>  
+        </thead>  
+        <tbody>        <%  
+            for (int i = 0; i < emps.size(); i++) {  
+                Emp emp = emps.get(i);  
+        %>  
+        <tr class="table-active">  
+            <td><%=i + 1%>  
+            </td>  
+            <td><%=emp.getEmpno()%>  
+            </td>  
+            <td><%=emp.getEname()%>  
+            </td>  
+            <td><%=emp.getMgr()%>  
+            </td>  
+            <td><%=emp.getJob()%>  
+            </td>  
+            <td><%=emp.getHiredate()%>  
+            </td>  
+            <td><%=emp.getSal()%>  
+            </td>  
+            <td><%=emp.getComm()%>  
+            </td>  
+            <td><%=emp.getDeptno()%>  
+            </td>  
+            <td><%  
+                Double sal = emp.getSal();  
+                if (sal <= 500) {  
+                    out.print("A");  
+                } else if (sal <= 1000) {  
+                    out.print("B");  
+                } else if (sal <= 1500) {  
+                    out.print("C");  
+                } else if (sal <= 2000) {  
+                    out.print("D");  
+                } else if (sal <= 3000) {  
+                    out.print("E");  
+                } else if (sal <= 4000) {  
+                    out.print("F");  
+                } else {  
+                    out.print("G");  
+                }  
+            %></td>  
+        </tr>  
+        <%  
+            }  
+        %>  
+        </tbody>  
+    </table>  
+</div>  
+</body>  
 </html>
 ```

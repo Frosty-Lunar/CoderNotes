@@ -4,23 +4,64 @@
     "type": "split",
     "children": [
       {
-        "id": "d09ab899f538747a",
+        "id": "4d5f4744a6cffb8c",
         "type": "tabs",
         "children": [
           {
-            "id": "a450872c40aea317",
+            "id": "f304b732e3630c78",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "b03a629735a96732",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "1a698aaff95b45ce",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "ad9e80e2c8553a47",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "e288ddf6959d271d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_初级开发工程师/03_第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/02_Docker进阶实践/Docker进阶实践.md",
+                "file": "02_初级开发工程师/01_第一阶段/05_基础框架/01_Mybatis基础/01_Mybatis初识/Mybatis初识.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
+          },
+          {
+            "id": "602a88923cafe4aa",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -102,7 +143,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02_初级开发工程师/03_第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/02_Docker进阶实践/Docker进阶实践.md",
+                "file": "02_初级开发工程师/01_第一阶段/05_基础框架/01_Mybatis基础/01_Mybatis初识/Mybatis初识.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +160,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "02_初级开发工程师/03_第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/02_Docker进阶实践/Docker进阶实践.md",
+                "file": "02_初级开发工程师/01_第一阶段/05_基础框架/01_Mybatis基础/01_Mybatis初识/Mybatis初识.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -142,7 +183,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02_初级开发工程师/03_第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/02_Docker进阶实践/Docker进阶实践.md"
+                "file": "02_初级开发工程师/01_第一阶段/05_基础框架/01_Mybatis基础/01_Mybatis初识/Mybatis初识.md"
               }
             }
           },
@@ -165,8 +206,6 @@
     "hiddenItems": {
       "audio-recorder:开始/结束录音": false,
       "random-note:开始漫游笔记": false,
-      "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false,
-      "markdown-table-editor:Open Markdown Table Editor": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -175,56 +214,59 @@
       "command-palette:打开命令面板": false,
       "workspaces:管理工作区布局": false,
       "markdown-importer:打开 Markdown 格式转换器": false,
+      "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false,
+      "markdown-table-editor:Open Markdown Table Editor": false,
       "obsidian-memos:Memos": false
     }
   },
-  "active": "a450872c40aea317",
+  "active": "7327be173ddc19a1",
   "lastOpenFiles": [
-    "02_初级开发工程师/03_第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/02_Docker进阶实践/05_Swarm/Swarm.md",
-    "02_初级开发工程师/03_第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/02_Docker进阶实践/05_Swarm/assets/image-20230830230050062.png",
-    "02_初级开发工程师/03_第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/02_Docker进阶实践/05_Swarm/assets/image-20230830230030263.png",
-    "02_初级开发工程师/03_第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/02_Docker进阶实践/05_Swarm/assets/image-20230830230006170.png",
-    "02_初级开发工程师/03_第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/02_Docker进阶实践/05_Swarm/assets/image-20230830225741070.png",
-    "02_初级开发工程师/03_第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/02_Docker进阶实践/05_Swarm/assets/image-20230830225033293.png",
-    "02_初级开发工程师/03_第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/02_Docker进阶实践/05_Swarm/assets/image-20230830224746245.png",
-    "02_初级开发工程师/03_第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/02_Docker进阶实践/05_Swarm/assets/image-20230830224730591.png",
-    "02_初级开发工程师/03_第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/02_Docker进阶实践/05_Swarm/assets/image-20230830224715924.png",
-    "02_初级开发工程师/03_第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/02_Docker进阶实践/05_Swarm/assets/image-20230830224659554.png",
-    "02_初级开发工程师/03_第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/02_Docker进阶实践/05_Swarm/assets/image-20230830224539910.png",
-    "02_初级开发工程师/03_第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/02_Docker进阶实践/05_Swarm/assets",
-    "02_初级开发工程师/03_第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/02_Docker进阶实践/Docker进阶实践.md",
-    "02_初级开发工程师/03_第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/02_Docker进阶实践/04_Harbor/Harbor.md",
-    "02_初级开发工程师/03_第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/02_Docker进阶实践/05_Swarm",
-    "02_初级开发工程师/03_第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/02_Docker进阶实践/04_Harbor/assets",
-    "02_初级开发工程师/03_第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/02_Docker进阶实践/03_DockerCompose/DockerCompose.md",
-    "02_初级开发工程师/03_第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/02_Docker进阶实践/04_Harbor",
-    "02_初级开发工程师/03_第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/02_Docker进阶实践/02_Docker实战/Docker实战.md",
-    "02_初级开发工程师/03_第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/02_Docker进阶实践/03_DockerCompose/assets",
-    "02_初级开发工程师/03_第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/02_Docker进阶实践/03_DockerCompose",
-    "02_初级开发工程师/03_第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/01_Docker基础入门/06_DockerFile/DockerFile.md",
-    "02_初级开发工程师/03_第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/02_Docker进阶实践/01_Docker网络介绍/Docker网络介绍.md",
-    "02_初级开发工程师/03_第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/02_Docker进阶实践/02_Docker实战/assets",
-    "02_初级开发工程师/03_第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/01_Docker基础入门/Docker基础入门.md",
-    "02_初级开发工程师/03_第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/01_Docker基础入门/01_Docker的介绍与安装/Docker的介绍与安装.md",
-    "02_初级开发工程师/03_第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/02_Docker进阶实践/02_Docker实战",
-    "02_初级开发工程师/03_第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/Docker基础入门+实践.md",
-    "02_初级开发工程师/03_第三阶段/02_云原生容器化入门/云原生容器化入门.md",
-    "01_Docker基础入门+实践/Docker基础入门+实践.md",
-    "02_初级开发工程师/03_第三阶段/第三阶段.md",
-    "02_初级开发工程师/03_第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/02_Docker进阶实践/01_Docker网络介绍/assets",
-    "02_初级开发工程师/02_第二阶段/第二阶段.md",
-    "02_初级开发工程师/初级开发工程师.md",
-    "00_Templates/template_metainfo_yaml.md",
-    "02_初级开发工程师/01_第一阶段/03_前端技术/08_Vue/03_VueDemo/Test.md",
-    "Excalidraw/Drawing 2023-08-16 09.26.35.excalidraw.md",
-    "assets/image-20230819192827882.png.md",
-    "02_初级开发工程师/01_第一阶段/02_数据库和JDBC/01_MySQL/06_DQL（多表）/DQL（多表）.md",
-    "02_初级开发工程师/03_第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/01_Docker基础入门/06_DockerFile/assets",
-    "02_初级开发工程师/03_第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/01_Docker基础入门/05_数据卷容器/数据卷容器.md",
-    "Excalidraw/Drawing 2023-08-25 13.39.41.excalidraw.md",
-    "02_初级开发工程师/03_第三阶段/02_云原生容器化入门/01_Docker基础入门+实践/01_Docker基础入门/04_Docker数据卷/Docker数据卷.md",
-    "img/image-20210322174750851.png.md",
-    "02_初级开发工程师/01_第一阶段/04_JavaEE技术/03_Servlet/Servlet.md",
+    "02_初级开发工程师/01_第一阶段/04_JavaEE技术/JavaEE技术.md",
+    "02_初级开发工程师/01_第一阶段/04_JavaEE技术/07_分页/分页.md",
+    "02_初级开发工程师/01_第一阶段/04_JavaEE技术/06_Ajax/Ajax.md",
+    "02_初级开发工程师/01_第一阶段/04_JavaEE技术/06_Ajax/05_三级联动案例开发/三级联动案例开发.md",
+    "02_初级开发工程师/01_第一阶段/04_JavaEE技术/06_Ajax/04_跨域处理/跨域处理.md",
+    "02_初级开发工程师/01_第一阶段/02_数据库和JDBC/02_JDBC/07_连接池的使用/连接池的使用.md",
+    "02_初级开发工程师/01_第一阶段/02_数据库和JDBC/02_JDBC/08_Log4j日志框架/Log4j日志框架.md",
+    "02_初级开发工程师/01_第一阶段/04_JavaEE技术/05_过滤器和监听器/05_监听器开发案例/监听器开发案例.md",
+    "02_初级开发工程师/01_第一阶段/04_JavaEE技术/05_过滤器和监听器/04_初识监听器/初识监听器.md",
+    "02_初级开发工程师/01_第一阶段/04_JavaEE技术/05_过滤器和监听器/过滤器和监听器.md",
+    "02_初级开发工程师/01_第一阶段/04_JavaEE技术/05_过滤器和监听器/01_初识过滤器/初识过滤器.md",
+    "02_初级开发工程师/01_第一阶段/04_JavaEE技术/05_过滤器和监听器/03_过滤器的应用案例/过滤器的应用案例.md",
+    "02_初级开发工程师/01_第一阶段/04_JavaEE技术/03_Servlet/03_乱码的处理/乱码的处理.md",
+    "02_初级开发工程师/01_第一阶段/04_JavaEE技术/04_JSP/08_MVC模式的引入/MVC模式的引入.md",
+    "02_初级开发工程师/01_第一阶段/04_JavaEE技术/04_JSP/JSP.md",
+    "02_初级开发工程师/01_第一阶段/04_JavaEE技术/04_JSP/07_JSTL/JSTL.md",
+    "02_初级开发工程师/01_第一阶段/04_JavaEE技术/04_JSP/07_JSTL/assets/image-20230909200859838.png",
+    "02_初级开发工程师/01_第一阶段/04_JavaEE技术/04_JSP/07_JSTL/assets/jstl-1.2.jar",
+    "02_初级开发工程师/01_第一阶段/04_JavaEE技术/04_JSP/07_JSTL/assets",
+    "02_初级开发工程师/01_第一阶段/04_JavaEE技术/04_JSP/06_EL表达式的使用/EL表达式的使用.md",
+    "02_初级开发工程师/01_第一阶段/04_JavaEE技术/04_JSP/06_EL表达式的使用/assets/image-20230909190727182.png",
+    "02_初级开发工程师/01_第一阶段/04_JavaEE技术/04_JSP/05_JSP的内置对象/JSP的内置对象.md",
+    "02_初级开发工程师/01_第一阶段/04_JavaEE技术/04_JSP/06_EL表达式的使用/assets/image-20230909175238129.png",
+    "02_初级开发工程师/01_第一阶段/04_JavaEE技术/04_JSP/06_EL表达式的使用/assets/image-20230909174141826.png",
+    "02_初级开发工程师/01_第一阶段/04_JavaEE技术/04_JSP/06_EL表达式的使用/assets",
+    "02_初级开发工程师/01_第一阶段/04_JavaEE技术/04_JSP/05_JSP的内置对象/assets/image-20230909171518805.png",
+    "02_初级开发工程师/01_第一阶段/04_JavaEE技术/04_JSP/05_JSP的内置对象/assets/image-20230909171449073.png",
+    "02_初级开发工程师/01_第一阶段/03_前端技术/06_BootStrap/01_初识BootStrap/初识BootStrap.md",
+    "02_初级开发工程师/01_第一阶段/04_JavaEE技术/04_JSP/02_前后端分离/前后端分离.md",
+    "02_初级开发工程师/01_第一阶段/04_JavaEE技术/04_JSP/01_JSP入门/JSP入门.md",
+    "02_初级开发工程师/01_第一阶段/04_JavaEE技术/02_HTTP协议/HTTP协议.md",
+    "Docker打包镜像（2023-0820）/Docker打包镜像(修复路径问题).md",
+    "log.md",
+    "Linux环境配置/Linux安装Java.md",
+    "Templates/template_metainfo_yaml.md",
+    "Docker打包镜像（2023-0820）/assets/image-20230820134957871.png",
+    "Docker打包镜像（2023-0820）/assets/image-20230820134859180.png",
+    "Docker打包镜像（2023-0820）/assets/image-20230820133901368.png",
+    "Docker打包镜像（2023-0820）/assets",
+    "Linux环境配置/assets/image-20230820132407006.png",
+    "Linux环境配置",
+    "Docker打包镜像（2023-0820）",
+    "Linux环境配置/assets",
+    "Docker打包镜像（2023-0820）/docker镜像打包.txt",
+    "Templates",
+    "02_初级开发工程师/01_第一阶段/04_JavaEE技术/03_Servlet/03_乱码的处理/assets",
     "未命名.canvas"
   ]
 }

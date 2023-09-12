@@ -25,102 +25,89 @@ Vue (读音` /vjuː/`，类似于 view) **是一套用于构建用户界面的�
 
 实际上vue框架就是一个MVVM框架，它是渐进式框架，它是初创公司的首选框架，它是轻量级的，有很多根据Vue拓展的独立的功能或库
 
-![](./image/image_v8gN7AyDP4.png)
+![](assets/image-20230831222304217.png)
 
 通过下面的例子我们来了解Vue的好处
-
-![](./image/image_LjGzgjFcJH.png)
 
 ### 传统方式操作元素
 
 ```html
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <h1>点击操作的元素</h1>
-    <button id="add">点击加1</button>
-    <button id="reduce">点击减1</button>
-  </body>
-  <script>
-    var elNubmer = document.getElementsByTagName('h1')[0];//获取到H1中的元素
-    var nubler = 0;
-    elNubmer.innerHTML = nubler;//初始化值
-    
-    var elAdd  = document.getElementById('add');//获取到加1的按钮
-    elAdd.onclick = function(){//注册点击事件
-      nubler++;
-      elNubmer.innerHTML = nubler;//重新绘制视图
-    }
-    
-    var elReduce  = document.getElementById('reduce');//获取到减1的按钮
-    elReduce.onclick = function(){//注册点击事件
-      nubler--;
-      elNubmer.innerHTML = nubler;//重新绘制视图
-    }  
-  </script>
-</html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+<div>
+	<h1>0</h1>
+	<button>点我+1</button>
+	<button>点我-1</button>
+	<script>
+        let count = 0;
+        const btn01 = document.getElementsByTagName('button')[0];
+        const elh1 = document.getElementsByTagName('h1')[0];
+        btn01.onclick = function () {
+            count++;
+            elh1.innerHTML = count;
+        }
+        const btn02 = document.getElementsByTagName('button')[1];
+        btn02.onclick = function () {
+            count--;
+            elh1.innerHTML = count;
+        }
+	</script>
+</div>
+</body>
 ```
 
-在传统方式操作数据中,我们每次改变数据的值,都需要冲洗向视图中绘制
+在传统方式操作数据中，我们每次改变数据的值，都需要重新绘制视图。
 
 ### 使用Vue操作元素
 
 ```html
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <script src="js/vue.js"></script>
-  <body>
-    <div id="app">
-      <h1>{{number}}</h1>
-      <button id="add" @click="add">点击加1</button>
-      <button id="reduce" @click="reduce">点击减1</button>
-    </div>
-  </body>
-  <script>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+<div id="app">
+	<h1>{{a}}</h1>
+	<button @click="add">点我+1</button>
+	<button @click="minus">点我-1</button>
+</div>
+<script src="../resource/vue.js"></script>
+<script>
     new Vue({
-      //挂载点
-      el:'#app',
-      //数据
-      data:{
-        number:0
-      },
-      //方法
-      methods:{
-        add(){
-          this.number++;
-        },
-        reduce(){
-          this.number--;
+        el: '#app',
+        data: {a: 0},
+        methods: {
+            add() {
+                this.a++;
+            }, minus() {
+                this.a--;
+            }
         }
-      }
     })
-  </script>
+</script>
+</body>
 </html>
 ```
 
-使用Vue操作时,我们无需关注视图模型,仅仅需要修该数据,视图的渲染都交给Vue来执行
+使用Vue操作时，我们无需关注视图模型，仅仅需要修改数据，视图的渲染都交给Vue来执行。
 
 ## Vue的使用
 
 ### 引入Vue
 
 1.  Vue2文件
-    在Vue的起步中，区分开发环境和生产环境，两者的不同，开发环境可以清晰的看清源码，生产环境就是将源码进行压缩，占比大小更小，我们学习过程中使用生产环境
-    开发环境版本，包含了有帮助的命令行警告
-    [vue\_dev.js](file/vue_dev_BFFNRkiMkA.js)
-    生产环境版本，优化了尺寸和速度
-    [vue\_uat.js](file/vue_uat_BFAXhXjjx2.js)
-2.  文件中引入
-    ![](./image/image_BGuwDNlhqn.png)
-3.  简单的语法格式
+在Vue的起步中，区分开发环境和生产环境，两者的不同，开发环境可以清晰的看清源码，生产环境就是将源码进行压缩，占比大小更小，我们学习过程中使用生产环境
++ 开发环境版本，包含了有帮助的命令行警告
++ 生产环境版本，优化了尺寸和速度
+
+2.  简单的语法格式
     ```html
     <body>
         <div id="app">
@@ -147,9 +134,7 @@ Vue (读音` /vjuː/`，类似于 view) **是一套用于构建用户界面的�
 
 插值语法是通过一对`{{}}`进行书写，内部是对data数据管理中心的属性进行渲染，也可以是表达式moustache（胡子）是双大括号学名，也叫（胡子语法）
 
-![](./image/image_cWK0Bdndnh.png)
-
-内部也可以存放表达式: `{{a >= 100 ? 20 : 10}}`  ,  注意，**表达式支持简单，比如简单判断**，比如三元表达式，**不可以使用if等等复杂判断** `{{if(a>200){a=100}else{a=300}}}`
+内部也可以存放表达式: `{{a >= 100 ? 20 : 10}}`  ,  注意，**表达式支持简单，比如简单判断**，**比如三元表达式**，**不可以使用if等等复杂判断** `{{if(a>200){a=100}else{a=300}}}`
 
 我们需要注意的是，所有的对象中的清单内容，都是Vue规定，内置的，不可以自由发挥
 
@@ -180,5 +165,3 @@ Vue (读音` /vjuː/`，类似于 view) **是一套用于构建用户界面的�
 ```
 
 上面代码中content对象是我们自己随意创建的，所以是不支持在Vue中使用的
-
-![](./image/image_DjZi8JjwCV.png)

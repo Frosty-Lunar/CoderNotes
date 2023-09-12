@@ -30,3 +30,5 @@ index: true
 [生命周期](08_生命周期/生命周期.md)
 
 [Vue中的Ajax](09_Vue中的Ajax/Vue中的Ajax.md)
+
+[Vue（尚硅谷）](10_Vue（尚硅谷）/Vue（尚硅谷）.md)

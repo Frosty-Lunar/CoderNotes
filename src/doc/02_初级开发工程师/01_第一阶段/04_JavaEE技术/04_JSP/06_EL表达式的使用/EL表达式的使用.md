@@ -69,6 +69,8 @@ ${域标志.数据名.属性名(可选)}
 </html>
 ```
 
+![](assets/image-20230909174141826.png)
+
 ### 省略域取数据
 
 ```JSP
@@ -123,6 +125,7 @@ ${域标志.数据名.属性名(可选)}
 </html>
 ```
 
+
 ### 总结
 
 1. EL表达式定义在JSP页面上,在转译之后的java文件中,会被转化成java代码
@@ -138,7 +141,7 @@ ${域标志.数据名.属性名(可选)}
 - 算数运算符
 	- `+` `-` `*` `/` `%`
 - 比较运算符
-	- == `eq` `equals`
+	-  == `eq` `equals`
 	- `>` `gt` `greater` `then`
 	- `<` `lt` `lower`  `then`
 	- `>=`  `ge`  `greater` `then or equals`
@@ -148,7 +151,7 @@ ${域标志.数据名.属性名(可选)}
 	- `||`  `or`
 	- `&& ` `and`
 - 三目运算符
-	- `${条件 ?表达式1 : 表达式2}`
+	- `${条件 ? 表达式1 : 表达式2}`
 - 判空运算符
 	- `empty`
 
@@ -271,4 +274,85 @@ ${empty list}<br/><%--集合长度为0 认为是空--%>
 ${list.size() eq 0}<br/><%--集合长度为0 认为是空--%>
 </body>
 </html>
+```
 
+## 使用EL表达式改造案例
+
+![](assets/image-20230909190727182.png)
+
+```jsp
+<%@ page import="java.util.List" %>  
+<%@ page import="com.example.servletcase.pojo.Emp" %>  
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>  
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <title>JSP - Hello World</title>  
+    <!-- 引入CSS文件 -->  
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>  
+    <!-- 导入顺序:JQuery文件\bootstrap.bundle.min.js\bootstrap.min.js -->  
+    <script src="js/bootstrap.bundle.min.js"></script>  
+    <script src="js/bootstrap.min.js"></script>  
+</head>  
+<body>  
+  
+<div style="width: 1200px;margin: 0px auto">  
+    <%  
+        List<Emp> emps = (List<Emp>) request.getAttribute("emps");  
+    %>  
+    <table class="table">  
+        <thead>  
+        <tr>  
+            <th scope="col">序号</th>  
+            <th scope="col">工号</th>  
+            <th scope="col">姓名</th>  
+            <th scope="col">上级编号</th>  
+            <th scope="col">职务</th>  
+            <th scope="col">入职日期</th>  
+            <th scope="col">薪资</th>  
+            <th scope="col">补助</th>  
+            <th scope="col">部门号</th>  
+            <th scope="col">薪资等级</th>  
+        </tr>  
+        </thead>  
+        <tbody>        <%  
+            for (int i = 0; i < emps.size(); i++) {  
+                Emp emp = emps.get(i);  
+                pageContext.setAttribute("emp", emp);  
+        %>  
+        <tr class="table-active">  
+            <td><%=i + 1%>  
+            </td>  
+            <td>${emp.empno}  
+            </td>  
+            <td>${emp.ename}  
+            </td>  
+            <td>${emp.mgr}  
+            </td>  
+            <td>${emp.job}  
+            </td>  
+            <td>${emp.hiredate}  
+            </td>  
+            <td>${emp.sal}  
+            </td>  
+            <td>${emp.comm}  
+            </td>  
+            <td>${emp.deptno}  
+            </td>  
+            <td>                ${emp.sal le 500 ? "A": ""}  
+                ${emp.sal gt 500 and emp.sal le 1000 ? "B": ""}  
+                ${emp.sal gt 1000 and emp.sal le 1500 ? "C": ""}  
+                ${emp.sal gt 1500 and emp.sal le 2000 ? "D": ""}  
+                ${emp.sal gt 2000 and emp.sal le 2500 ? "E": ""}  
+                ${emp.sal gt 2500 ? "F": ""}  
+            </td>  
+        </tr>  
+        <%  
+            }  
+        %>  
+        </tbody>  
+    </table>  
+</div>  
+</body>  
+</html>
+```

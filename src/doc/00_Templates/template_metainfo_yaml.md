@@ -1,13 +1,12 @@
 ---
-title: {{title}}
+title: Java基础知识
 icon: file
-order: 1
 author: FrostyLunar
-date: {{date:YYYY-MM-DD ddd}}
+date: 2023-06-15 周四
 category:
-	- 初级开发工程师
+	- JavaSE阶段
 tag:
-	- P5
+	- Java基础
 sticky: true
 index: true
 ---
