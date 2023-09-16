@@ -45,7 +45,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_初级开发工程师/01_第一阶段/05_基础框架/01_Mybatis基础/01_Mybatis初识/Mybatis初识.md",
+                "file": "02_初级开发工程师/01_第一阶段/05_基础框架/03_Spring基础/03_Bean的生命周期/Bean的生命周期.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -53,15 +53,20 @@
             }
           },
           {
-            "id": "602a88923cafe4aa",
+            "id": "54696c7552217459",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "02_初级开发工程师/01_第一阶段/06_设计模式/02_二十三种设计模式/01_创建型模式/01_单例模式.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -90,7 +95,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "\"\t- \"",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -123,7 +128,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -143,7 +149,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02_初级开发工程师/01_第一阶段/05_基础框架/01_Mybatis基础/01_Mybatis初识/Mybatis初识.md",
+                "file": "02_初级开发工程师/01_第一阶段/06_设计模式/02_二十三种设计模式/01_创建型模式/01_单例模式.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -160,7 +166,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "02_初级开发工程师/01_第一阶段/05_基础框架/01_Mybatis基础/01_Mybatis初识/Mybatis初识.md",
+                "file": "02_初级开发工程师/01_第一阶段/06_设计模式/02_二十三种设计模式/01_创建型模式/01_单例模式.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -183,7 +189,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02_初级开发工程师/01_第一阶段/05_基础框架/01_Mybatis基础/01_Mybatis初识/Mybatis初识.md"
+                "file": "02_初级开发工程师/01_第一阶段/06_设计模式/02_二十三种设计模式/01_创建型模式/01_单例模式.md"
               }
             }
           },
@@ -193,6 +199,16 @@
             "state": {
               "type": "calendar",
               "state": {}
+            }
+          },
+          {
+            "id": "abcb6cb1179b4bf3",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency"
+              }
             }
           }
         ],
@@ -214,13 +230,23 @@
       "command-palette:打开命令面板": false,
       "workspaces:管理工作区布局": false,
       "markdown-importer:打开 Markdown 格式转换器": false,
-      "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false,
       "markdown-table-editor:Open Markdown Table Editor": false,
-      "obsidian-memos:Memos": false
+      "obsidian-memos:Memos": false,
+      "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false
     }
   },
-  "active": "7327be173ddc19a1",
+  "active": "54696c7552217459",
   "lastOpenFiles": [
+    "01_JavaSE阶段/B_进阶/03_集合/05_比较器/比较器.md",
+    "01_JavaSE阶段/B_进阶/02_常用类/01_包装类/包装类.md",
+    "02_初级开发工程师/01_第一阶段/01_阿里代码规范/阿里代码规范.md",
+    "01_JavaSE阶段/A_基础/01_Java概念/Java概念.md",
+    "00_Templates/template_metainfo_yaml.md",
+    "02_初级开发工程师/01_第一阶段/05_基础框架/03_Spring基础/01_初识Spring/初识Spring.md",
+    "02_初级开发工程师/01_第一阶段/05_基础框架/03_Spring基础/08_AOP面向切面编程/AOP面向切面编程.md",
+    "02_初级开发工程师/01_第一阶段/05_基础框架/03_Spring基础/07_静态代理与动态代理/静态代理与动态代理.md",
+    "02_初级开发工程师/01_第一阶段/05_基础框架/03_Spring基础/02_基于XML管理Bean/基于XML管理Bean.md",
+    "02_初级开发工程师/01_第一阶段/05_基础框架/01_Mybatis基础/01_Mybatis初识/Mybatis初识.md",
     "02_初级开发工程师/01_第一阶段/04_JavaEE技术/JavaEE技术.md",
     "02_初级开发工程师/01_第一阶段/04_JavaEE技术/07_分页/分页.md",
     "02_初级开发工程师/01_第一阶段/04_JavaEE技术/06_Ajax/Ajax.md",
@@ -240,22 +266,12 @@
     "02_初级开发工程师/01_第一阶段/04_JavaEE技术/04_JSP/07_JSTL/assets/image-20230909200859838.png",
     "02_初级开发工程师/01_第一阶段/04_JavaEE技术/04_JSP/07_JSTL/assets/jstl-1.2.jar",
     "02_初级开发工程师/01_第一阶段/04_JavaEE技术/04_JSP/07_JSTL/assets",
-    "02_初级开发工程师/01_第一阶段/04_JavaEE技术/04_JSP/06_EL表达式的使用/EL表达式的使用.md",
     "02_初级开发工程师/01_第一阶段/04_JavaEE技术/04_JSP/06_EL表达式的使用/assets/image-20230909190727182.png",
-    "02_初级开发工程师/01_第一阶段/04_JavaEE技术/04_JSP/05_JSP的内置对象/JSP的内置对象.md",
     "02_初级开发工程师/01_第一阶段/04_JavaEE技术/04_JSP/06_EL表达式的使用/assets/image-20230909175238129.png",
     "02_初级开发工程师/01_第一阶段/04_JavaEE技术/04_JSP/06_EL表达式的使用/assets/image-20230909174141826.png",
     "02_初级开发工程师/01_第一阶段/04_JavaEE技术/04_JSP/06_EL表达式的使用/assets",
     "02_初级开发工程师/01_第一阶段/04_JavaEE技术/04_JSP/05_JSP的内置对象/assets/image-20230909171518805.png",
     "02_初级开发工程师/01_第一阶段/04_JavaEE技术/04_JSP/05_JSP的内置对象/assets/image-20230909171449073.png",
-    "02_初级开发工程师/01_第一阶段/03_前端技术/06_BootStrap/01_初识BootStrap/初识BootStrap.md",
-    "02_初级开发工程师/01_第一阶段/04_JavaEE技术/04_JSP/02_前后端分离/前后端分离.md",
-    "02_初级开发工程师/01_第一阶段/04_JavaEE技术/04_JSP/01_JSP入门/JSP入门.md",
-    "02_初级开发工程师/01_第一阶段/04_JavaEE技术/02_HTTP协议/HTTP协议.md",
-    "Docker打包镜像（2023-0820）/Docker打包镜像(修复路径问题).md",
-    "log.md",
-    "Linux环境配置/Linux安装Java.md",
-    "Templates/template_metainfo_yaml.md",
     "Docker打包镜像（2023-0820）/assets/image-20230820134957871.png",
     "Docker打包镜像（2023-0820）/assets/image-20230820134859180.png",
     "Docker打包镜像（2023-0820）/assets/image-20230820133901368.png",

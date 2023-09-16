@@ -44,7 +44,7 @@ index: true
 
 #### 1. 解析XML配置文件
 
-底层运用到了Dom4J的技术对于XML进行解析
+底层运用到了`Dom4J`的技术对于XML进行解析
 
 ```XML
 <bean id="deptDao" class="com.meturing.dao.impl.DeptDaoImpl"></bean>
@@ -59,7 +59,7 @@ index: true
 `Class clazz =Class.forName("com.meturing.dao.impl.DeptDaoImpl")`
 
 初始化这个对象
-`Object obj  = clazz.newInstance();`
+	`Object obj  = clazz.newInstance();`
 
 底层有个Map,将ID作为Key,对象作为Value存储起来
 `map.put("deptDao",obj)`
@@ -71,7 +71,7 @@ index: true
 `ApplicationContext 接口` :  BeanFactory的子接口,提供更多更强大的功能,研发人员一般使用的接口
 
 我们可以通过以下实现类来构建Bean工厂对象
-`FileSystemXmlApplicationContext` : 需要通过文件的结对路径或者相对于项目的路径来初始化XML
+`FileSystemXmlApplicationContext` : 需要通过文件的绝对路径或者相对于项目的路径来初始化XML
 `ClassPathXmlApplicationContext` : 相对于Resource的路径
 
 1. 获得Bean工厂对象

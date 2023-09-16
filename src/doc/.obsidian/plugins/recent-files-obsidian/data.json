@@ -1,6 +1,50 @@
 {
   "recentFiles": [
     {
+      "basename": "01_单例模式",
+      "path": "02_初级开发工程师/01_第一阶段/06_设计模式/02_二十三种设计模式/01_创建型模式/01_单例模式.md"
+    },
+    {
+      "basename": "比较器",
+      "path": "01_JavaSE阶段/B_进阶/03_集合/05_比较器/比较器.md"
+    },
+    {
+      "basename": "包装类",
+      "path": "01_JavaSE阶段/B_进阶/02_常用类/01_包装类/包装类.md"
+    },
+    {
+      "basename": "阿里代码规范",
+      "path": "02_初级开发工程师/01_第一阶段/01_阿里代码规范/阿里代码规范.md"
+    },
+    {
+      "basename": "Java概念",
+      "path": "01_JavaSE阶段/A_基础/01_Java概念/Java概念.md"
+    },
+    {
+      "basename": "template_metainfo_yaml",
+      "path": "00_Templates/template_metainfo_yaml.md"
+    },
+    {
+      "basename": "初识Spring",
+      "path": "02_初级开发工程师/01_第一阶段/05_基础框架/03_Spring基础/01_初识Spring/初识Spring.md"
+    },
+    {
+      "basename": "AOP面向切面编程",
+      "path": "02_初级开发工程师/01_第一阶段/05_基础框架/03_Spring基础/08_AOP面向切面编程/AOP面向切面编程.md"
+    },
+    {
+      "basename": "静态代理与动态代理",
+      "path": "02_初级开发工程师/01_第一阶段/05_基础框架/03_Spring基础/07_静态代理与动态代理/静态代理与动态代理.md"
+    },
+    {
+      "basename": "Bean的生命周期",
+      "path": "02_初级开发工程师/01_第一阶段/05_基础框架/03_Spring基础/03_Bean的生命周期/Bean的生命周期.md"
+    },
+    {
+      "basename": "基于XML管理Bean",
+      "path": "02_初级开发工程师/01_第一阶段/05_基础框架/03_Spring基础/02_基于XML管理Bean/基于XML管理Bean.md"
+    },
+    {
       "basename": "Mybatis初识",
       "path": "02_初级开发工程师/01_第一阶段/05_基础框架/01_Mybatis基础/01_Mybatis初识/Mybatis初识.md"
     },
